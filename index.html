@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Animal Recovery Taskforce | Institute of Global Cat Guardianship</title>
+  <meta name="description" content="Rapid Tactical Recovery for Missing Companion Animals in Greater London. Clinical nocturnal perimeter grids, thermal tracking, and behavioral compression mapping.">
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'tactical-black': '#07080C',
+            'tactical-charcoal': '#0B0D14',
+            'tactical-slate': '#111420',
+            'tactical-amber': '#F59E0B',
+            'tactical-amber-glow': 'rgba(245, 158, 11, 0.15)',
+            'tactical-emerald': '#10B981',
+            'tactical-emerald-glow': 'rgba(16, 185, 129, 0.15)',
+            'tactical-border': 'rgba(255, 255, 255, 0.08)',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+          },
+          animation: {
+            'pulse-fast': 'pulse 1.2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'radar-sweep': 'radarSweep 4s linear infinite',
+            'glow-amber': 'amberGlow 2.5s ease-in-out infinite alternate',
+          },
+          keyframes: {
+            radarSweep: {
+              '0%': { transform: 'rotate(0deg)' },
+              '100%': { transform: 'rotate(360deg)' },
+            },
+            amberGlow: {
+              '0%': { borderColor: 'rgba(245, 158, 11, 0.3)', boxShadow: '0 0 10px rgba(245, 158, 11, 0.1)' },
+              '100%': { borderColor: 'rgba(245, 158, 11, 0.85)', boxShadow: '0 0 25px rgba(245, 158, 11, 0.35)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Custom Tactical Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #07080C;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1F2433;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #F59E0B;
+    }
+
+    /* Glassmorphic Tactical Panels */
+    .glass-tactical {
+      background: rgba(13, 16, 26, 0.82);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    .glass-tactical-hover:hover {
+      border-color: rgba(245, 158, 11, 0.4);
+      box-shadow: 0 0 25px rgba(245, 158, 11, 0.08);
+    }
+
+    /* Subtle Technical Grid Background */
+    .bg-grid-pattern {
+      background-size: 36px 36px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    }
+
+    /* Radar scanline animation */
+    .scanline {
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.5), transparent);
+      position: absolute;
+      animation: scan 3s linear infinite;
+    }
+    @keyframes scan {
+      0% { top: 0%; opacity: 0.1; }
+      50% { opacity: 0.8; }
+      100% { top: 100%; opacity: 0.1; }
+    }
+  </style>
+</head>
+<body class="bg-tactical-black text-zinc-100 font-sans antialiased selection:bg-amber-500 selection:text-black min-h-screen relative overflow-x-hidden">
+
+  <!-- Technical Background Grid -->
+  <div class="fixed inset-0 bg-grid-pattern pointer-events-none z-0 opacity-80"></div>
+  <div class="fixed inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(245,158,11,0.06),rgba(0,0,0,0))] pointer-events-none z-0"></div>
+
+  <!-- ==================== 1. STICKY HEADER ==================== -->
+  <header class="sticky top-0 z-50 glass-tactical border-b border-zinc-800/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand & Mission Mark -->
+      <div class="flex items-center space-x-4">
+        <a href="#" class="flex items-center space-x-3 group">
+          <div class="w-10 h-10 rounded bg-zinc-900 border border-zinc-700 flex items-center justify-center font-mono font-bold text-amber-500 group-hover:border-amber-500 transition-colors">
+            <i data-lucide="shield-alert" class="w-5 h-5 text-amber-500"></i>
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="font-mono text-sm sm:text-base font-bold tracking-widest text-zinc-100 group-hover:text-amber-400 transition-colors">
+                [ UAR-TASKFORCE ]
+              </span>
+              <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-mono tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping mr-1.5"></span>
+                DISPATCH ACTIVE
+              </span>
+            </div>
+            <p class="text-[10px] tracking-wider uppercase font-mono text-zinc-400">
+              Institute of Global Cat Guardianship
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <nav class="hidden md:flex items-center space-x-8 text-xs font-mono tracking-wider uppercase text-zinc-400">
+        <a href="#sop" class="hover:text-amber-400 transition-colors">01 // Protocol SOP</a>
+        <a href="#case-files" class="hover:text-amber-400 transition-colors flex items-center space-x-1.5">
+          <span>02 // Case Files</span>
+          <span class="px-1.5 py-0.2 rounded bg-zinc-800 text-amber-400 font-bold text-[10px]">18</span>
+        </a>
+        <a href="#boroughs" class="hover:text-amber-400 transition-colors">03 // London Grid</a>
+        <a href="#intake" class="hover:text-amber-400 transition-colors">04 // Emergency Intake</a>
+      </nav>
+
+      <!-- Emergency Hotline Button -->
+      <div class="flex items-center space-x-3">
+        <a href="tel:08009174820" class="flex items-center space-x-2 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-full bg-amber-500 text-zinc-950 font-mono text-xs font-bold tracking-wide hover:bg-amber-400 active:scale-95 transition-all shadow-[0_0_20px_rgba(245,158,11,0.35)]">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+          <span>TEL: 0800 917 4820</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="relative z-10">
+
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+      <!-- Tactical Scanline FX -->
+      <div class="scanline"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+
+        <!-- Flashing Amber Pro-Bono Status Badge -->
+        <div class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-full bg-zinc-900/90 border border-amber-500/60 shadow-[0_0_15px_rgba(245,158,11,0.2)] animate-glow-amber mb-8 text-left sm:text-center">
+          <span class="flex h-2.5 w-2.5 relative flex-shrink-0">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-500"></span>
+          </span>
+          <span class="font-mono text-xs sm:text-sm font-semibold text-amber-400 tracking-wide">
+            [!] CURRENT BOROUGH STATUS: <span class="text-zinc-100 font-bold underline decoration-amber-500 underline-offset-4">2 of 5 Pro-Bono Emergency Deployments</span> Remaining This Month
+          </span>
+        </div>
+
+        <!-- High-Stakes Institutional Headline -->
+        <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-zinc-100 leading-[1.08] max-w-5xl mx-auto uppercase">
+          Rapid Tactical Recovery for Missing Companion Animals in <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">Greater London</span>.
+        </h1>
+
+        <!-- Authoritative Subheadline -->
+        <p class="mt-6 text-base sm:text-lg md:text-xl text-zinc-300 max-w-3xl mx-auto leading-relaxed font-normal">
+          Operating under the <strong class="text-zinc-100 font-semibold">Institute of Global Cat Guardianship</strong>. We deploy clinical nocturnal perimeter containment, FLIR thermal telemetry, and 150-foot behavioral compression mapping. When the first 48 hours dictate survival, our specialist field units restore perimeter security.
+        </p>
+
+        <!-- Primary Dual CTAs -->
+        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-xl mx-auto">
+          <a href="#intake" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-8 py-4 rounded-lg bg-amber-500 text-zinc-950 font-mono text-sm font-bold tracking-wider uppercase hover:bg-amber-400 shadow-[0_0_30px_rgba(245,158,11,0.4)] active:scale-95 transition-all group">
+            <i data-lucide="radio" class="w-4 h-4 text-zinc-950 group-hover:rotate-12 transition-transform"></i>
+            <span>[ DISPATCH AN EMERGENCY TEAM ]</span>
+          </a>
+          <a href="#case-files" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-8 py-4 rounded-lg bg-zinc-900/80 hover:bg-zinc-800/90 text-zinc-200 border border-zinc-700/80 hover:border-zinc-500 font-mono text-sm font-semibold tracking-wider uppercase transition-all backdrop-blur-md">
+            <i data-lucide="file-check-2" class="w-4 h-4 text-emerald-400"></i>
+            <span>[ View Live Case Files (18) ]</span>
+          </a>
+        </div>
+
+        <!-- Telemetry HUD Counters -->
+        <div class="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+          <div class="glass-tactical p-5 rounded-lg border-t-2 border-t-amber-500/80 text-left">
+            <div class="flex items-center justify-between text-zinc-400 font-mono text-[11px] uppercase tracking-wider mb-2">
+              <span>RAPID RECOVERY RATE</span>
+              <i data-lucide="activity" class="w-3.5 h-3.5 text-amber-500"></i>
+            </div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-zinc-100 font-mono">94.2%</div>
+            <div class="text-[11px] text-zinc-400 mt-1 font-mono">Documented within 72h window</div>
+          </div>
+
+          <div class="glass-tactical p-5 rounded-lg border-t-2 border-t-emerald-500/80 text-left">
+            <div class="flex items-center justify-between text-zinc-400 font-mono text-[11px] uppercase tracking-wider mb-2">
+              <span>CONTAINMENT RADIUS</span>
+              <i data-lucide="crosshair" class="w-3.5 h-3.5 text-emerald-500"></i>
+            </div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-zinc-100 font-mono">&lt; 120m</div>
+            <div class="text-[11px] text-zinc-400 mt-1 font-mono">Mean distance from escape point</div>
+          </div>
+
+          <div class="glass-tactical p-5 rounded-lg border-t-2 border-t-amber-500/80 text-left">
+            <div class="flex items-center justify-between text-zinc-400 font-mono text-[11px] uppercase tracking-wider mb-2">
+              <span>VERIFIED REUNIONS</span>
+              <i data-lucide="check-circle" class="w-3.5 h-3.5 text-amber-500"></i>
+            </div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-zinc-100 font-mono">18 / 18</div>
+            <div class="text-[11px] text-zinc-400 mt-1 font-mono">Complete photo dossiers below</div>
+          </div>
+
+          <div class="glass-tactical p-5 rounded-lg border-t-2 border-t-emerald-500/80 text-left">
+            <div class="flex items-center justify-between text-zinc-400 font-mono text-[11px] uppercase tracking-wider mb-2">
+              <span>FIELD READINESS</span>
+              <i data-lucide="zap" class="w-3.5 h-3.5 text-emerald-500"></i>
+            </div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-zinc-100 font-mono">24 / 7 / 365</div>
+            <div class="text-[11px] text-zinc-400 mt-1 font-mono">All 33 London Boroughs</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 3. STANDARD OPERATING PROCEDURE (SOP) ==================== -->
+    <section id="sop" class="py-20 border-y border-zinc-800/80 bg-tactical-charcoal/50 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded bg-zinc-900 border border-zinc-700/80 font-mono text-xs text-amber-400 uppercase tracking-widest mb-3">
+            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+            <span>STANDARD OPERATING PROCEDURE</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight uppercase text-zinc-100">
+            Three-Phase Tactical Intervention Protocol
+          </h2>
+          <p class="mt-3 text-zinc-400 text-sm sm:text-base">
+            Lost animals do not run indefinitely; they compress. We replace frantic amateur searches with clinical military-grade containment.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- SOP Card 1 -->
+          <div class="glass-tactical glass-tactical-hover rounded-xl p-8 relative flex flex-col justify-between border-t-2 border-t-amber-500 transition-all duration-300">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center mb-6">
+                <i data-lucide="compass" class="w-6 h-6 text-amber-400"></i>
+              </div>
+              <div class="font-mono text-xs font-semibold uppercase tracking-widest text-amber-500 mb-2">PHASE 01 // ANALYSIS</div>
+              <h3 class="text-xl font-bold text-zinc-100 mb-4 tracking-tight">Behavioral Compression Mapping</h3>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                Felines under trauma default to silence and physical immobility within an initial 150-foot micro-habitat. Our telemetry software models escape vectors, prevailing wind turbulence, noise corridors, and territorial feline displacement boundaries to calculate the precise compression quadrant.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-zinc-800/80 flex items-center justify-between text-xs font-mono text-zinc-400">
+              <span>TARGET: 150-FOOT RADIAL CORE</span>
+              <span class="text-emerald-400 flex items-center space-x-1">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                <span>CALIBRATED</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- SOP Card 2 -->
+          <div class="glass-tactical glass-tactical-hover rounded-xl p-8 relative flex flex-col justify-between border-t-2 border-t-amber-500 transition-all duration-300">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center mb-6">
+                <i data-lucide="scan" class="w-6 h-6 text-amber-400"></i>
+              </div>
+              <div class="font-mono text-xs font-semibold uppercase tracking-widest text-amber-500 mb-2">PHASE 02 // SURVEILLANCE</div>
+              <h3 class="text-xl font-bold text-zinc-100 mb-4 tracking-tight">Perimeter Surveillance Grid</h3>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                Deploying silent 4K motion-triggered cellular reconnaissance nodes and FLIR thermal imagers across suspected transit paths. Between 01:00 and 04:30—when urban noise drops below 30dB—our field teams log nocturnal movement signatures without disturbing surrounding domestic environments.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-zinc-800/80 flex items-center justify-between text-xs font-mono text-zinc-400">
+              <span>TECH: FLIR THERMAL &amp; CELLULAR RECON</span>
+              <span class="text-emerald-400 flex items-center space-x-1">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                <span>ZERO-NOISE</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- SOP Card 3 -->
+          <div class="glass-tactical glass-tactical-hover rounded-xl p-8 relative flex flex-col justify-between border-t-2 border-t-amber-500 transition-all duration-300">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center mb-6">
+                <i data-lucide="network" class="w-6 h-6 text-amber-400"></i>
+              </div>
+              <div class="font-mono text-xs font-semibold uppercase tracking-widest text-amber-500 mb-2">PHASE 03 // EXTRACTION</div>
+              <h3 class="text-xl font-bold text-zinc-100 mb-4 tracking-tight">360-Degree Neighborhood Saturation</h3>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                Disciplined, algorithmic leaflet propagation and direct outbuilding access coordination with neighboring landowners. We eliminate frantic calling that forces terrified pets further into hiding, replacing chaos with a high-trust verification channel and gentle, sound-dampened retrieval equipment.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-zinc-800/80 flex items-center justify-between text-xs font-mono text-zinc-400">
+              <span>PROTOCOL: CONTROLLED LOCKDOWN</span>
+              <span class="text-emerald-400 flex items-center space-x-1">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                <span>GENTLE RECOVERY</span>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 4. VERIFIED CASE FILES GRID (ALL 18 REUNITED CATS) ==================== -->
+    <section id="case-files" class="py-24 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header & Live Metric Counter -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-zinc-800/80 gap-6">
+          <div>
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded bg-zinc-900 border border-zinc-700/80 font-mono text-xs text-emerald-400 uppercase tracking-widest mb-3">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+              <span>DEBRIEF ARCHIVE // EVIDENCE DOSSIER</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight uppercase text-zinc-100">
+              Verified Recoveries &amp; Case Files
+            </h2>
+            <p class="mt-2 text-zinc-400 text-sm sm:text-base font-mono">
+              <span class="text-amber-400 font-bold">18 Successful London Borough Deployments</span> Documented &amp; Independently Verified.
+            </p>
+          </div>
+
+          <!-- Interactive Filter Tabs -->
+          <div class="flex flex-wrap items-center gap-2 font-mono text-xs" id="borough-filters">
+            <button onclick="filterCases('all')" class="filter-btn active px-3.5 py-1.5 rounded bg-amber-500 text-zinc-950 font-bold tracking-wider uppercase transition-colors" data-filter="all">
+              All (18)
+            </button>
+            <button onclick="filterCases('north')" class="filter-btn px-3.5 py-1.5 rounded bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 border border-zinc-700/80 tracking-wider uppercase transition-colors" data-filter="north">
+              North London (5)
+            </button>
+            <button onclick="filterCases('south')" class="filter-btn px-3.5 py-1.5 rounded bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 border border-zinc-700/80 tracking-wider uppercase transition-colors" data-filter="south">
+              South London (5)
+            </button>
+            <button onclick="filterCases('east')" class="filter-btn px-3.5 py-1.5 rounded bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 border border-zinc-700/80 tracking-wider uppercase transition-colors" data-filter="east">
+              East London (4)
+            </button>
+            <button onclick="filterCases('west')" class="filter-btn px-3.5 py-1.5 rounded bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 border border-zinc-700/80 tracking-wider uppercase transition-colors" data-filter="west">
+              West &amp; Central (4)
+            </button>
+          </div>
+        </div>
+
+        <!-- 3-Column Tactical Grid of 18 Cases -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="cases-container">
+          
+          <!-- CASE 01: Milo (Islington) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="north" onclick="openCaseModal(1)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-01.jpg" alt="Milo reunited in Islington" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                ISLINGTON // Day 2 Perimeter Grid
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: MILO</span>
+                <span class="text-amber-400">CONTAINED: 26H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "We were spiraling after 36 hours. The team arrived at midnight, mapped the alleyway vectors without making a single sound, and had him safely secured before dawn."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-801 // DOMESTIC SHORTHAIR</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 02: Luna (Hackney) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="east" onclick="openCaseModal(2)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-02.jpg" alt="Luna reunited in Hackney" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                HACKNEY // 03:15 Thermal Detection
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: LUNA</span>
+                <span class="text-amber-400">CONTAINED: 19H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "They treated it like an emergency operation. No shouting, no shaking treats into the void—just pure scientific surveillance and patient recovery."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-802 // BOMBAY FELINE</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 03: Jasper (Camden) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="north" onclick="openCaseModal(3)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-03.jpg" alt="Jasper reunited in Camden" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                CAMDEN // 150ft Compression Sector
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: JASPER</span>
+                <span class="text-amber-400">CONTAINED: 34H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "The psychological mapping of where an indoor cat hunkers down was spot on. Jasper was under an abandoned sub-floor just 78 feet from our terrace."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-803 // BRITISH SHORTHAIR</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 04: Cleo (Southwark) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="south" onclick="openCaseModal(4)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-04.jpg" alt="Cleo reunited in Southwark" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                SOUTHWARK // Nocturnal Acoustic Decoy
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: CLEO</span>
+                <span class="text-amber-400">CONTAINED: 41H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "When local shelters told us to just wait, UAR mobilized immediately. Their calm composure kept us sane during the hardest 4 days of our lives."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-804 // CALICO DOMESTIC</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 05: Barnaby (Wandsworth) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="south" onclick="openCaseModal(5)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-05.jpg" alt="Barnaby reunited in Wandsworth" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                WANDSWORTH // Garden Core Enclosure
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: BARNABY</span>
+                <span class="text-amber-400">CONTAINED: 14H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "Watching them work was like watching an alpine search and rescue team. The methodical precision was astonishing. Barnaby is home safe."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-805 // TUXEDO SHORTHAIR</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 06: Oscar (Greenwich) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="south" onclick="openCaseModal(6)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-06.jpg" alt="Oscar reunited in Greenwich" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                GREENWICH // Sub-Deck Borescope
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: OSCAR</span>
+                <span class="text-amber-400">CONTAINED: 52H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "Oscar had wedged himself into an inaccessible cavity behind neighboring garages. The extraction was gentle, zero stress, absolute professionals."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-806 // MAINE COON MIX</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 07: Coco (Westminster) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="west" onclick="openCaseModal(7)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-07.jpg" alt="Coco reunited in Westminster" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                WESTMINSTER // Escape Vector Intercept
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: COCO</span>
+                <span class="text-amber-400">CONTAINED: 11H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "In central London traffic, every minute counted. Their containment strategy halted Coco before she reached the main arterial road."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-807 // SIAMESE CROSS</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 08: Felix (Lambeth) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="south" onclick="openCaseModal(8)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-08.jpg" alt="Felix reunited in Lambeth" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                LAMBETH // Motion Sensor Telemetry
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: FELIX</span>
+                <span class="text-amber-400">CONTAINED: 68H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "Four days missing in torrential rain. The night camera picked up his heat signature behind the community center. True guardians."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-808 // GREY TABBY</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 09: Bella (Lewisham) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="south" onclick="openCaseModal(9)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-09.jpg" alt="Bella reunited in Lewisham" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                LEWISHAM // Dense Shrubbery Lockdown
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: BELLA</span>
+                <span class="text-amber-400">CONTAINED: 22H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "The relief when the commander showed us the live thermal screen was indescribable. Methodical, compassionate, and deeply reassuring."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-809 // TORTOISESHELL</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 10: Archie (Tower Hamlets) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="east" onclick="openCaseModal(10)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-10.jpg" alt="Archie reunited in Tower Hamlets" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                TOWER HAMLETS // Canal Wall Grid
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: ARCHIE</span>
+                <span class="text-amber-400">CONTAINED: 29H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "We had searched frantically for three days. UAR pinpointed Archie within three hours using sound-dampened bait traps and thermal monitors."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-810 // RUSSIAN BLUE</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 11: Oliver (Richmond) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="west" onclick="openCaseModal(11)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-11.jpg" alt="Oliver reunited in Richmond" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                RICHMOND // Estate Boundary Sweep
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: OLIVER</span>
+                <span class="text-amber-400">CONTAINED: 18H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "Their coordinator gave us clear instructions: stop calling into the night, let the grid work. It went exactly according to protocol."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-811 // GOLDEN TABBY</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 12: Ziggy (Hammersmith) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="west" onclick="openCaseModal(12)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-12.jpg" alt="Ziggy reunited in Hammersmith" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                HAMMERSMITH // Rooftop Evacuation
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: ZIGGY</span>
+                <span class="text-amber-400">CONTAINED: 15H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "Ziggy had scaled a precarious fire escape and was paralyzed with fear. The extraction kit and quiet handling brought him down unscathed."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-812 // BENGAL CROSS</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 13: Simba (Kensington) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="west" onclick="openCaseModal(13)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-13.jpg" alt="Simba reunited in Kensington" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                KENSINGTON // Basement Vault Sweep
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: SIMBA</span>
+                <span class="text-amber-400">CONTAINED: 31H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "Quiet, clinical precision in a high-density Victorian block. Not a single neighbor was disturbed, and Simba was in our arms by 2 AM."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-813 // PERSIAN CROSS</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 14: Pip & Poppy (Haringey) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="north" onclick="openCaseModal(14)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-14.jpg" alt="Pip and Poppy reunited in Haringey" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                HARINGEY // Borough Border Recon
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: PIP &amp; POPPY</span>
+                <span class="text-amber-400">CONTAINED: 38H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "They don't do gimmicks or false hope. They work off behavioral data and terrain analysis. Reunited and thriving."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-814 // TWIN TABBY PAIR</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 15: Theo (Brent) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="north" onclick="openCaseModal(15)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-15.jpg" alt="Theo reunited in Brent" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                BRENT // Railway Embankment
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: THEO</span>
+                <span class="text-amber-400">CONTAINED: 27H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "Theo got spooked by construction work. The perimeter fencing protocol stopped him from bolting toward the train tracks."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-815 // NORWEGIAN FOREST</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 16: Boris (Ealing) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="west" onclick="openCaseModal(16)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-16.webp" alt="Boris reunited in Ealing" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                EALING // Allotment Sector Isolation
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: BORIS</span>
+                <span class="text-amber-400">CONTAINED: 45H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "The team surveyed 12 overgrown allotments in total blackout conditions. Found Boris sheltering inside an empty water butt. Heroic work."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-816 // BICOLOR SHORTHAIR</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 17: Monty (Croydon) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="south" onclick="openCaseModal(17)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-17.avif" alt="Monty reunited in Croydon" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                CROYDON // Under-Floor Thermal Scan
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: MONTY</span>
+                <span class="text-amber-400">CONTAINED: 24H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "We were convinced someone had taken him. UAR proved through heat telemetry he was within 40 meters. Methodical, calm, life-saving."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-817 // CHINCHILLA PERSIAN</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 18: Winston (Waltham Forest) -->
+          <div class="case-card glass-tactical rounded-xl overflow-hidden border border-zinc-800/80 hover:border-amber-500/50 transition-all duration-300 flex flex-col group cursor-pointer" data-region="east" onclick="openCaseModal(18)">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-zinc-950">
+              <img src="assets/images/case-18.webp" alt="Winston reunited in Waltham Forest" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-zinc-700 font-mono text-[10px] font-bold text-amber-400 uppercase tracking-wider">
+                WALTHAM FOREST // 360-Saturation
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 font-mono text-[10px] font-bold text-emerald-400 flex items-center space-x-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>SECURED</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                <span class="font-bold text-zinc-100">SUBJECT: WINSTON</span>
+                <span class="text-amber-400">CONTAINED: 33H</span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <p class="text-xs text-zinc-300 italic leading-relaxed mb-4">
+                "Leaflets deployed in a strategic 300m wave led directly to a sighting that night, verified on camera and secured by morning."
+              </p>
+              <div class="pt-3 border-t border-zinc-800/80 flex items-center justify-between font-mono text-[10px] text-zinc-400">
+                <span>CASE #UAR-818 // SMOKE BLACK DOMESTIC</span>
+                <span class="text-amber-400 group-hover:underline flex items-center space-x-1">
+                  <span>DEBRIEF</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 5. EMERGENCY DISPATCH INTAKE FORM ==================== -->
+    <section id="intake" class="py-24 border-t border-zinc-800/80 bg-gradient-to-b from-tactical-charcoal to-tactical-black relative">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Intake Terminal Shell -->
+        <div class="glass-tactical rounded-2xl border border-zinc-700/80 shadow-[0_0_50px_rgba(0,0,0,0.8)] overflow-hidden">
+          
+          <!-- Terminal Header Bar -->
+          <div class="px-6 py-4 bg-zinc-950 border-b border-zinc-800 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+              <div class="flex space-x-1.5">
+                <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-500/80 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
+              </div>
+              <span class="text-xs font-mono text-zinc-400 tracking-wider">
+                SECURE_DISPATCH_TERMINAL // V4.18
+              </span>
+            </div>
+            <div class="flex items-center space-x-2 font-mono text-[11px] text-amber-400">
+              <i data-lucide="lock" class="w-3 h-3 text-emerald-400"></i>
+              <span>256-BIT ENCRYPTED</span>
+            </div>
+          </div>
+
+          <!-- Terminal Content & Form -->
+          <div class="p-6 sm:p-10">
+            <div class="mb-8">
+              <div class="inline-flex items-center space-x-2 px-3 py-1 rounded bg-amber-500/10 border border-amber-500/30 text-amber-400 font-mono text-xs uppercase tracking-wider mb-2">
+                <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+                <span>RAPID INTAKE PROTOCOL</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-extrabold uppercase text-zinc-100 tracking-tight">
+                Emergency Dispatch Intake Form
+              </h2>
+              <p class="text-zinc-400 text-xs sm:text-sm mt-1">
+                Field teams evaluate incoming requests based on perimeter vulnerability and elapsed flight hours. Zero upfront fees for qualifying community cases.
+              </p>
+            </div>
+
+            <form id="emergency-dispatch-form" onsubmit="handleDispatchSubmit(event)" class="space-y-6">
+              
+              <!-- Row 1: Contact Details -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="owner-name" class="block text-xs font-mono uppercase tracking-wider text-zinc-300 mb-2">
+                    Guardian / Owner Full Name <span class="text-amber-500">*</span>
+                  </label>
+                  <input type="text" id="owner-name" required placeholder="e.g., Victoria Sterling" class="w-full px-4 py-3 rounded-lg bg-zinc-950/80 border border-zinc-700/80 text-zinc-100 placeholder-zinc-600 text-sm focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 font-mono transition-colors">
+                </div>
+                <div>
+                  <label for="owner-phone" class="block text-xs font-mono uppercase tracking-wider text-zinc-300 mb-2">
+                    Emergency Mobile Number <span class="text-amber-500">*</span>
+                  </label>
+                  <input type="tel" id="owner-phone" required placeholder="07... or +44..." class="w-full px-4 py-3 rounded-lg bg-zinc-950/80 border border-zinc-700/80 text-zinc-100 placeholder-zinc-600 text-sm focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 font-mono transition-colors">
+                </div>
+              </div>
+
+              <!-- Row 2: Animal Identification -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="pet-name" class="block text-xs font-mono uppercase tracking-wider text-zinc-300 mb-2">
+                    Companion Animal Name <span class="text-amber-500">*</span>
+                  </label>
+                  <input type="text" id="pet-name" required placeholder="e.g., Barnaby" class="w-full px-4 py-3 rounded-lg bg-zinc-950/80 border border-zinc-700/80 text-zinc-100 placeholder-zinc-600 text-sm focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 font-mono transition-colors">
+                </div>
+                <div>
+                  <label for="species" class="block text-xs font-mono uppercase tracking-wider text-zinc-300 mb-2">
+                    Species &amp; Profile <span class="text-amber-500">*</span>
+                  </label>
+                  <select id="species" required class="w-full px-4 py-3 rounded-lg bg-zinc-950/80 border border-zinc-700/80 text-zinc-100 text-sm focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 font-mono transition-colors">
+                    <option value="cat-indoor">Feline - Indoor Only (High Displacement Risk)</option>
+                    <option value="cat-outdoor">Feline - Indoor / Outdoor Access</option>
+                    <option value="dog-small">Canine - Small Breed</option>
+                    <option value="dog-large">Canine - Medium / Large Breed</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Row 3: Location & Time Elapsed -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="borough" class="block text-xs font-mono uppercase tracking-wider text-zinc-300 mb-2">
+                    London Borough / Last Known Sector <span class="text-amber-500">*</span>
+                  </label>
+                  <select id="borough" required class="w-full px-4 py-3 rounded-lg bg-zinc-950/80 border border-zinc-700/80 text-zinc-100 text-sm focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 font-mono transition-colors">
+                    <option value="">-- Select Greater London Borough --</option>
+                    <option value="Barnet">Barnet</option>
+                    <option value="Brent">Brent</option>
+                    <option value="Camden">Camden</option>
+                    <option value="Croydon">Croydon</option>
+                    <option value="Ealing">Ealing</option>
+                    <option value="Greenwich">Greenwich</option>
+                    <option value="Hackney">Hackney</option>
+                    <option value="Hammersmith and Fulham">Hammersmith and Fulham</option>
+                    <option value="Haringey">Haringey</option>
+                    <option value="Islington">Islington</option>
+                    <option value="Kensington and Chelsea">Kensington and Chelsea</option>
+                    <option value="Lambeth">Lambeth</option>
+                    <option value="Lewisham">Lewisham</option>
+                    <option value="Richmond upon Thames">Richmond upon Thames</option>
+                    <option value="Southwark">Southwark</option>
+                    <option value="Tower Hamlets">Tower Hamlets</option>
+                    <option value="Waltham Forest">Waltham Forest</option>
+                    <option value="Wandsworth">Wandsworth</option>
+                    <option value="Westminster">Westminster</option>
+                    <option value="Other London Borough">Other Greater London Borough</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="time-elapsed" class="block text-xs font-mono uppercase tracking-wider text-zinc-300 mb-2">
+                    Time Elapsed Since Disappearance <span class="text-amber-500">*</span>
+                  </label>
+                  <select id="time-elapsed" required class="w-full px-4 py-3 rounded-lg bg-zinc-950/80 border border-zinc-700/80 text-zinc-100 text-sm focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 font-mono transition-colors">
+                    <option value="under-12">&lt; 12 Hours (Golden Containment Window)</option>
+                    <option value="12-24">12 to 24 Hours</option>
+                    <option value="24-48">24 to 48 Hours</option>
+                    <option value="3-days-plus">3+ Days (Deep Compression Vector)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Row 4: Tactical Notes & Address -->
+              <div>
+                <label for="incident-notes" class="block text-xs font-mono uppercase tracking-wider text-zinc-300 mb-2">
+                  Micro-Habitat Clues &amp; Street Address (Postcode, alleyways, garden locks, microchip)
+                </label>
+                <textarea id="incident-notes" rows="3" placeholder="e.g., Escaped via second floor window onto roof parapet near N1 2XU. Microchipped, skittish around strangers..." class="w-full px-4 py-3 rounded-lg bg-zinc-950/80 border border-zinc-700/80 text-zinc-100 placeholder-zinc-600 text-sm focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 font-mono transition-colors"></textarea>
+              </div>
+
+              <!-- High-Contrast Amber Submit Button -->
+              <div class="pt-2">
+                <button type="submit" id="submit-btn" class="w-full py-4 px-6 rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 font-mono font-bold text-sm sm:text-base tracking-wider uppercase flex items-center justify-center space-x-3 shadow-[0_0_25px_rgba(245,158,11,0.3)] transition-all active:scale-[0.99] cursor-pointer">
+                  <i data-lucide="shield-alert" class="w-5 h-5"></i>
+                  <span>[ INITIALIZE EMERGENCY PROTOCOL ]</span>
+                </button>
+              </div>
+
+              <!-- Reassurance Micro-Copy -->
+              <div class="pt-2 text-center text-xs font-mono text-zinc-400 leading-relaxed border-t border-zinc-800/80">
+                <p>
+                  * Pro-bono community allocation applies. Zero upfront service fees for qualifying cases. Immediate text-dispatch routing. 
+                  Field commanders operate 24/7 across all Greater London sectors.
+                </p>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 6. LONDON BOROUGH OPERATIONAL MATRIX ==================== -->
+    <section id="boroughs" class="py-20 border-t border-zinc-800/80 bg-tactical-charcoal/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
+          
+          <div class="lg:col-span-1">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded bg-zinc-900 border border-zinc-700 font-mono text-xs text-amber-500 uppercase tracking-widest mb-3">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+              <span>DEPLOYMENT ZONES</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-bold uppercase text-zinc-100 mb-4 tracking-tight">
+              Greater London Tactical Coverage
+            </h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+              Our nocturnal teams operate specialized mobile units equipped with FLIR thermal imaging, acoustic sound-dampened traps, and endoscope borescopes. Deployments are dispatched from strategic hub points in Central, North, and South London.
+            </p>
+            <div class="space-y-3 font-mono text-xs text-zinc-300">
+              <div class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Average Response Dispatch: Under 90 Minutes</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Nocturnal Thermal Sweeps (01:00 - 05:00)</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Metropolitan Police &amp; RSPCA Coordination</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Active Borough Badges Matrix -->
+          <div class="lg:col-span-2 glass-tactical p-6 rounded-xl border border-zinc-800">
+            <div class="flex items-center justify-between pb-4 mb-4 border-b border-zinc-800 font-mono text-xs text-zinc-400">
+              <span>ACTIVE SURVEILLANCE BOROUGHS</span>
+              <span class="text-emerald-400 flex items-center space-x-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>STATUS: HIGH READINESS</span>
+              </span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 font-mono text-xs">
+              <div class="p-2.5 rounded bg-zinc-950/80 border border-zinc-800 flex items-center justify-between">
+                <span class="text-zinc-200">Islington</span>
+                <span class="text-emerald-400 font-bold">GRID OK</span>
+              </div>
+              <div class="p-2.5 rounded bg-zinc-950/80 border border-zinc-800 flex items-center justify-between">
+                <span class="text-zinc-200">Camden</span>
+                <span class="text-emerald-400 font-bold">GRID OK</span>
+              </div>
+              <div class="p-2.5 rounded bg-zinc-950/80 border border-zinc-800 flex items-center justify-between">
+                <span class="text-zinc-200">Hackney</span>
+                <span class="text-emerald-400 font-bold">GRID OK</span>
+              </div>
+              <div class="p-2.5 rounded bg-zinc-950/80 border border-zinc-800 flex items-center justify-between">
+                <span class="text-zinc-200">Southwark</span>
+                <span class="text-emerald-400 font-bold">GRID OK</span>
+              </div>
+              <div class="p-2.5 rounded bg-zinc-950/80 border border-zinc-800 flex items-center justify-between">
+                <span class="text-zinc-200">Tower Hamlets</span>
+                <span class="text-emerald-400 font-bold">GRID OK</span>
+              </div>
+              <div class="p-2.5 rounded bg-zinc-950/80 border border-zinc-800 flex items-center justify-between">
+                <span class="text-zinc-200">Westminster</span>
+                <span class="text-emerald-400 font-bold">GRID OK</span>
+              </div>
+              <div class="p-2.5 rounded bg-zinc-950/80 border border-zinc-800 flex items-center justify-between">
+                <span class="text-zinc-200">Wandsworth</span>
+                <span class="text-emerald-400 font-bold">GRID OK</span>
+              </div>
+              <div class="p-2.5 rounded bg-zinc-950/80 border border-zinc-800 flex items-center justify-between">
+                <span class="text-zinc-200">Lambeth</span>
+                <span class="text-emerald-400 font-bold">GRID OK</span>
+              </div>
+              <div class="p-2.5 rounded bg-zinc-950/80 border border-zinc-800 flex items-center justify-between">
+                <span class="text-zinc-200">Kensington &amp; Chelsea</span>
+                <span class="text-emerald-400 font-bold">GRID OK</span>
+              </div>
+              <div class="p-2.5 rounded bg-zinc-950/80 border border-zinc-800 flex items-center justify-between">
+                <span class="text-zinc-200">Greenwich</span>
+                <span class="text-emerald-400 font-bold">GRID OK</span>
+              </div>
+              <div class="p-2.5 rounded bg-zinc-950/80 border border-zinc-800 flex items-center justify-between">
+                <span class="text-zinc-200">Richmond</span>
+                <span class="text-emerald-400 font-bold">GRID OK</span>
+              </div>
+              <div class="p-2.5 rounded bg-zinc-950/80 border border-zinc-800 flex items-center justify-between">
+                <span class="text-zinc-200">Hammersmith</span>
+                <span class="text-emerald-400 font-bold">GRID OK</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== 7. FOOTER ==================== -->
+  <footer class="border-t border-zinc-800 bg-tactical-black py-12 relative z-10 text-xs font-mono text-zinc-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-zinc-800/80">
+        <div class="md:col-span-2">
+          <div class="flex items-center space-x-2 text-zinc-100 font-bold tracking-widest text-sm mb-3">
+            <span>[ UAR-TASKFORCE ]</span>
+          </div>
+          <p class="text-zinc-400 text-xs leading-relaxed max-w-md">
+            Operating under the auspices of the Institute of Global Cat Guardianship. A specialized rapid tactical recovery initiative dedicated to precision perimeter containment and ethical animal reunifications across the Greater London territory.
+          </p>
+        </div>
+
+        <div>
+          <div class="text-zinc-100 font-bold tracking-wider uppercase mb-3">Direct Dispatch</div>
+          <ul class="space-y-2">
+            <li><span class="text-zinc-400">Emergency:</span> <strong class="text-amber-400">0800 917 4820</strong></li>
+            <li><span class="text-zinc-400">Priority Radio:</span> <span class="text-zinc-300">CH-44 (Direct)</span></li>
+            <li><span class="text-zinc-400">Response Unit:</span> <span class="text-zinc-300">London Sector HQ</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="text-zinc-100 font-bold tracking-wider uppercase mb-3">Protocols</div>
+          <ul class="space-y-2">
+            <li><a href="#sop" class="hover:text-amber-400 transition-colors">Compression Mapping</a></li>
+            <li><a href="#sop" class="hover:text-amber-400 transition-colors">FLIR Nocturnal Recon</a></li>
+            <li><a href="#case-files" class="hover:text-amber-400 transition-colors">18 Verified Debriefs</a></li>
+            <li><a href="#intake" class="hover:text-amber-400 transition-colors">Terminal Intake</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-zinc-400 gap-4">
+        <div>
+          &copy; 2026 Institute of Global Cat Guardianship. All rights reserved. Urban Animal Recovery Taskforce.
+        </div>
+        <div class="flex space-x-6">
+          <span>CLASSIFICATION: OPERATIONAL SECURE</span>
+          <span class="text-emerald-400">SYSTEMS ONLINE</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== 8. CASE STUDY DOSSIER MODAL (LIGHTBOX) ==================== -->
+  <div id="case-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-md p-4 sm:p-6 transition-opacity duration-300">
+    <div class="glass-tactical max-w-3xl w-full rounded-2xl overflow-hidden border border-zinc-700 shadow-[0_0_50px_rgba(0,0,0,0.9)] max-h-[90vh] flex flex-col relative" onclick="event.stopPropagation()">
+      
+      <!-- Modal Bar -->
+      <div class="px-6 py-4 bg-zinc-950 border-b border-zinc-800 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span id="modal-docket-id" class="font-mono text-xs font-bold text-amber-400 tracking-wider">
+            CASE DOSSIER #UAR-801
+          </span>
+        </div>
+        <button onclick="closeCaseModal()" class="text-zinc-400 hover:text-zinc-100 p-1 rounded hover:bg-zinc-800 transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="overflow-y-auto p-6 space-y-6">
+        <div class="aspect-[16/9] w-full rounded-lg overflow-hidden bg-zinc-950 border border-zinc-800 relative">
+          <img id="modal-img" src="" alt="Case Study Photo" class="w-full h-full object-cover">
+          <div class="absolute bottom-3 left-3 px-3 py-1 rounded bg-black/80 font-mono text-xs text-amber-400 border border-zinc-700" id="modal-badge">
+            ISLINGTON // Day 2 Perimeter Grid
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 font-mono text-xs">
+          <div class="bg-zinc-950/80 p-3 rounded border border-zinc-800">
+            <span class="text-zinc-400 block text-[10px]">SUBJECT NAME</span>
+            <span id="modal-name" class="font-bold text-zinc-100">MILO</span>
+          </div>
+          <div class="bg-zinc-950/80 p-3 rounded border border-zinc-800">
+            <span class="text-zinc-400 block text-[10px]">BREED / PROFILE</span>
+            <span id="modal-breed" class="font-bold text-zinc-100">Domestic Shorthair</span>
+          </div>
+          <div class="bg-zinc-950/80 p-3 rounded border border-zinc-800">
+            <span class="text-zinc-400 block text-[10px]">RECOVERY DURATION</span>
+            <span id="modal-time" class="font-bold text-amber-400">26 Hours</span>
+          </div>
+          <div class="bg-zinc-950/80 p-3 rounded border border-zinc-800">
+            <span class="text-zinc-400 block text-[10px]">VERIFICATION STATUS</span>
+            <span class="font-bold text-emerald-400">CONFIRMED SAFE</span>
+          </div>
+        </div>
+
+        <div class="bg-zinc-950/60 p-5 rounded-lg border border-zinc-800/80">
+          <h4 class="text-xs font-mono uppercase tracking-wider text-zinc-400 mb-2">Owner Testimonial &amp; Field Debrief:</h4>
+          <p id="modal-quote" class="text-sm text-zinc-200 italic leading-relaxed">
+            "..."
+          </p>
+        </div>
+
+        <div class="font-mono text-[11px] text-zinc-400 leading-relaxed border-t border-zinc-800 pt-4">
+          <p>
+            <strong class="text-zinc-300">Tactical Summary:</strong> Thermal telemetry verified nocturnal foraging corridor at 03:40. Micro-containment traps placed without scent disruption. Zero trauma sustained; returned safely to domestic perimeter.
+          </p>
+        </div>
+      </div>
+
+      <div class="px-6 py-4 bg-zinc-950/90 border-t border-zinc-800 flex justify-end">
+        <button onclick="closeCaseModal()" class="px-5 py-2 rounded bg-zinc-800 hover:bg-zinc-700 text-zinc-200 font-mono text-xs uppercase tracking-wider transition-colors">
+          Close Dossier
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== 9. DISPATCH CONFIRMATION MODAL ==================== -->
+  <div id="dispatch-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/85 backdrop-blur-md p-4 transition-opacity duration-300">
+    <div class="glass-tactical max-w-lg w-full rounded-2xl overflow-hidden border border-amber-500/80 shadow-[0_0_60px_rgba(245,158,11,0.3)] p-8 text-center relative animate-glow-amber">
+      
+      <div class="w-16 h-16 rounded-full bg-amber-500/10 border-2 border-amber-500 mx-auto flex items-center justify-center mb-6">
+        <i data-lucide="shield-check" class="w-8 h-8 text-amber-400"></i>
+      </div>
+
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded bg-zinc-900 border border-zinc-700 font-mono text-xs text-emerald-400 mb-4">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <span>PROTOCOL INITIALIZED</span>
+      </div>
+
+      <h3 class="text-2xl font-extrabold uppercase text-zinc-100 tracking-tight mb-2">
+        Tactical Dispatch Logged
+      </h3>
+      
+      <div class="font-mono text-xs text-amber-400 mb-6 bg-zinc-950 p-3 rounded border border-zinc-800" id="dispatch-ticket-info">
+        CASE DOCKET #UAR-2026-948 // SECTOR ASSIGNED
+      </div>
+
+      <p class="text-zinc-300 text-sm leading-relaxed mb-6 text-left">
+        Your intake has been routed directly to the London Tactical Duty Commander. An automated SMS verification has been queued to your contact number.
+      </p>
+
+      <div class="bg-zinc-950/80 p-4 rounded-lg border border-zinc-800/80 text-left mb-6 space-y-2 font-mono text-xs text-zinc-400">
+        <div class="text-amber-400 font-bold uppercase text-[11px]">// IMMEDIATE OWNER DIRECTIVES:</div>
+        <p>1. <span class="text-zinc-200">Cease calling loudly:</span> Do not shout into the dark; it drives panicked pets beyond the 150ft containment perimeter.</p>
+        <p>2. <span class="text-zinc-200">Preserve scent vector:</span> Leave an unwashed piece of clothing at the primary escape threshold.</p>
+        <p>3. <span class="text-zinc-200">Stand by phone:</span> Field commander will call within 15-30 minutes.</p>
+      </div>
+
+      <button onclick="closeDispatchModal()" class="w-full py-3 px-6 rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 font-mono font-bold text-xs uppercase tracking-wider transition-all">
+        Acknowledge &amp; Return to Dashboard
+      </button>
+
+    </div>
+  </div>
+
+  <!-- JavaScript Application Logic -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // 18 Case Studies Full Database
+    const casesData = {
+      1: {
+        id: "UAR-801",
+        name: "Milo",
+        breed: "Domestic Shorthair (Ginger)",
+        borough: "Islington",
+        method: "Day 2 Perimeter Grid",
+        time: "26 Hours",
+        quote: "We were spiraling after 36 hours. The team arrived at midnight, mapped the alleyway vectors without making a single sound, and had him safely secured before dawn.",
+        img: "assets/images/case-01.jpg",
+        region: "north"
+      },
+      2: {
+        id: "UAR-802",
+        name: "Luna",
+        breed: "Bombay Feline (Black)",
+        borough: "Hackney",
+        method: "03:15 Thermal Detection",
+        time: "19 Hours",
+        quote: "They treated it like an emergency operation. No shouting, no shaking treats into the void—just pure scientific surveillance and patient recovery.",
+        img: "assets/images/case-02.jpg",
+        region: "east"
+      },
+      3: {
+        id: "UAR-803",
+        name: "Jasper",
+        breed: "British Shorthair (Blue)",
+        borough: "Camden",
+        method: "150ft Compression Sector",
+        time: "34 Hours",
+        quote: "The psychological mapping of where an indoor cat hunkers down was spot on. Jasper was under an abandoned sub-floor just 78 feet from our terrace.",
+        img: "assets/images/case-03.jpg",
+        region: "north"
+      },
+      4: {
+        id: "UAR-804",
+        name: "Cleo",
+        breed: "Calico Domestic",
+        borough: "Southwark",
+        method: "Nocturnal Acoustic Decoy",
+        time: "41 Hours",
+        quote: "When local shelters told us to just wait, UAR mobilized immediately. Their calm composure kept us sane during the hardest 4 days of our lives.",
+        img: "assets/images/case-04.jpg",
+        region: "south"
+      },
+      5: {
+        id: "UAR-805",
+        name: "Barnaby",
+        breed: "Black & White Tuxedo",
+        borough: "Wandsworth",
+        method: "Garden Core Enclosure",
+        time: "14 Hours",
+        quote: "Watching them work was like watching an alpine search and rescue team. The methodical precision was astonishing. Barnaby is home safe.",
+        img: "assets/images/case-05.jpg",
+        region: "south"
+      },
+      6: {
+        id: "UAR-806",
+        name: "Oscar",
+        breed: "Maine Coon Mix",
+        borough: "Greenwich",
+        method: "Sub-Deck Borescope Inspection",
+        time: "52 Hours",
+        quote: "Oscar had wedged himself into an inaccessible cavity behind neighboring garages. The extraction was gentle, zero stress, absolute professionals.",
+        img: "assets/images/case-06.jpg",
+        region: "south"
+      },
+      7: {
+        id: "UAR-807",
+        name: "Coco",
+        breed: "Siamese Cross",
+        borough: "Westminster",
+        method: "Escape Vector Intercept",
+        time: "11 Hours",
+        quote: "In central London traffic, every minute counted. Their containment strategy halted Coco before she reached the main arterial road.",
+        img: "assets/images/case-07.jpg",
+        region: "west"
+      },
+      8: {
+        id: "UAR-808",
+        name: "Felix",
+        breed: "Grey Tabby",
+        borough: "Lambeth",
+        method: "Motion Sensor Triangulation",
+        time: "68 Hours",
+        quote: "Four days missing in torrential rain. The night camera picked up his heat signature behind the community center. True guardians.",
+        img: "assets/images/case-08.jpg",
+        region: "south"
+      },
+      9: {
+        id: "UAR-809",
+        name: "Bella",
+        breed: "Tortoiseshell",
+        borough: "Lewisham",
+        method: "Dense Shrubbery Lockdown",
+        time: "22 Hours",
+        quote: "The relief when the commander showed us the live thermal screen was indescribable. Methodical, compassionate, and deeply reassuring.",
+        img: "assets/images/case-09.jpg",
+        region: "south"
+      },
+      10: {
+        id: "UAR-810",
+        name: "Archie",
+        breed: "Russian Blue",
+        borough: "Tower Hamlets",
+        method: "Canal Wall Perimeter Grid",
+        time: "29 Hours",
+        quote: "We had searched frantically for three days. UAR pinpointed Archie within three hours using sound-dampened bait traps and thermal monitors.",
+        img: "assets/images/case-10.jpg",
+        region: "east"
+      },
+      11: {
+        id: "UAR-811",
+        name: "Oliver",
+        breed: "Golden Tabby",
+        borough: "Richmond",
+        method: "Estate Boundary Saturation",
+        time: "18 Hours",
+        quote: "Their coordinator gave us clear instructions: stop calling into the night, let the grid work. It went exactly according to protocol.",
+        img: "assets/images/case-11.jpg",
+        region: "west"
+      },
+      12: {
+        id: "UAR-812",
+        name: "Ziggy",
+        breed: "Bengal Cross",
+        borough: "Hammersmith",
+        method: "Rooftop Evacuation Flank",
+        time: "15 Hours",
+        quote: "Ziggy had scaled a precarious fire escape and was paralyzed with fear. The extraction kit and quiet handling brought him down unscathed.",
+        img: "assets/images/case-12.jpg",
+        region: "west"
+      },
+      13: {
+        id: "UAR-813",
+        name: "Simba",
+        breed: "Persian Cross",
+        borough: "Kensington & Chelsea",
+        method: "Basement Vault Sweep",
+        time: "31 Hours",
+        quote: "Quiet, clinical precision in a high-density Victorian block. Not a single neighbor was disturbed, and Simba was in our arms by 2 AM.",
+        img: "assets/images/case-13.jpg",
+        region: "west"
+      },
+      14: {
+        id: "UAR-814",
+        name: "Pip & Poppy",
+        breed: "Twin Tabby Recovery",
+        borough: "Haringey",
+        method: "Borough Border Recon",
+        time: "38 Hours",
+        quote: "They don't do gimmicks or false hope. They work off behavioral data and terrain analysis. Reunited and thriving.",
+        img: "assets/images/case-14.jpg",
+        region: "north"
+      },
+      15: {
+        id: "UAR-815",
+        name: "Theo",
+        breed: "Norwegian Forest Cat",
+        borough: "Brent",
+        method: "Railway Embankment Barrier",
+        time: "27 Hours",
+        quote: "Theo got spooked by construction work. The perimeter fencing protocol stopped him from bolting toward the train tracks.",
+        img: "assets/images/case-15.jpg",
+        region: "north"
+      },
+      16: {
+        id: "UAR-816",
+        name: "Boris",
+        breed: "Bicolor Shorthair",
+        borough: "Ealing",
+        method: "Allotment Sector Isolation",
+        time: "45 Hours",
+        quote: "The team surveyed 12 overgrown allotments in total blackout conditions. Found Boris sheltering inside an empty water butt. Heroic work.",
+        img: "assets/images/case-16.webp",
+        region: "west"
+      },
+      17: {
+        id: "UAR-817",
+        name: "Monty",
+        breed: "Chinchilla Persian",
+        borough: "Croydon",
+        method: "Under-Floor Thermal Scan",
+        time: "24 Hours",
+        quote: "We were convinced someone had taken him. UAR proved through heat telemetry he was within 40 meters. Methodical, calm, life-saving.",
+        img: "assets/images/case-17.avif",
+        region: "south"
+      },
+      18: {
+        id: "UAR-818",
+        name: "Winston",
+        breed: "Smoke Black Domestic",
+        borough: "Waltham Forest",
+        method: "360-Saturation Extraction",
+        time: "33 Hours",
+        quote: "Leaflets deployed in a strategic 300m wave led directly to a sighting that night, verified on camera and secured by morning.",
+        img: "assets/images/case-18.webp",
+        region: "east"
+      }
+    };
+
+    // Filter Cases
+    function filterCases(region) {
+      // Update buttons
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        if (btn.getAttribute('data-filter') === region) {
+          btn.classList.add('bg-amber-500', 'text-zinc-950', 'font-bold');
+          btn.classList.remove('bg-zinc-900', 'text-zinc-400');
+        } else {
+          btn.classList.remove('bg-amber-500', 'text-zinc-950', 'font-bold');
+          btn.classList.add('bg-zinc-900', 'text-zinc-400');
+        }
+      });
+
+      // Filter cards
+      const cards = document.querySelectorAll('.case-card');
+      cards.forEach(card => {
+        const cardRegion = card.getAttribute('data-region');
+        if (region === 'all' || cardRegion === region) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Modal Details Logic
+    function openCaseModal(caseNum) {
+      const data = casesData[caseNum];
+      if (!data) return;
+
+      document.getElementById('modal-docket-id').textContent = `CASE DOSSIER #${data.id}`;
+      document.getElementById('modal-img').src = data.img;
+      document.getElementById('modal-badge').textContent = `${data.borough.toUpperCase()} // ${data.method}`;
+      document.getElementById('modal-name').textContent = data.name.toUpperCase();
+      document.getElementById('modal-breed').textContent = data.breed;
+      document.getElementById('modal-time').textContent = data.time;
+      document.getElementById('modal-quote').textContent = `"${data.quote}"`;
+
+      const modal = document.getElementById('case-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeCaseModal() {
+      const modal = document.getElementById('case-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Close on outside click
+    document.getElementById('case-modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeCaseModal();
+      }
+    });
+
+    // Handle Emergency Intake Form
+    function handleDispatchSubmit(e) {
+      e.preventDefault();
+      
+      const submitBtn = document.getElementById('submit-btn');
+      const originalText = submitBtn.innerHTML;
+      
+      // Simulate Terminal Tactical Dispatching Sequence
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `
+        <span class="inline-flex items-center space-x-2">
+          <span class="w-3 h-3 rounded-full bg-zinc-950 animate-ping mr-2"></span>
+          <span>ROUTING TO COMMANDER...</span>
+        </span>
+      `;
+
+      setTimeout(() => {
+        const randomDocket = Math.floor(100 + Math.random() * 900);
+        const borough = document.getElementById('borough').value || "GREATER LONDON";
+        const petName = document.getElementById('pet-name').value || "COMPANION";
+
+        document.getElementById('dispatch-ticket-info').textContent = 
+          `CASE DOCKET #UAR-2026-${randomDocket} // SECTOR: ${borough.toUpperCase()} // SUBJECT: ${petName.toUpperCase()}`;
+
+        const dispatchModal = document.getElementById('dispatch-modal');
+        dispatchModal.classList.remove('hidden');
+        dispatchModal.classList.add('flex');
+
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+        lucide.createIcons();
+      }, 1200);
+    }
+
+    function closeDispatchModal() {
+      const modal = document.getElementById('dispatch-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.getElementById('emergency-dispatch-form').reset();
+    }
+  </script>
+</body>
+</html>
