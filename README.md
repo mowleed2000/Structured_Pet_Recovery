@@ -2,9 +2,11 @@
 
 > **Structured Recovery Operations for Missing Pets** — Shifting from random searching to targeted, professional recovery. Helping reunite missing cats and dogs with their owners across Greater London.
 
-🌐 **Live URL**: [https://mowleed2000.github.io/pet-recovery/](https://mowleed2000.github.io/pet-recovery/)  
+[![Deploy static content to Pages](https://github.com/mowleed2000/Structured_Pet_Recovery/actions/workflows/static.yml/badge.svg)](https://github.com/mowleed2000/Structured_Pet_Recovery/actions/workflows/static.yml)
+
+🌐 **Live URL**: [https://mowleed2000.github.io/Structured_Pet_Recovery/](https://mowleed2000.github.io/Structured_Pet_Recovery/)  
 📞 **Direct Emergency Contact**: 07459 887616 (Available 24/7)  
-🌿 **Branch**: `Structured_Pet_Recovery`
+📁 **Repository**: [https://github.com/mowleed2000/Structured_Pet_Recovery](https://github.com/mowleed2000/Structured_Pet_Recovery)
 
 ---
 
